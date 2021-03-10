@@ -1,0 +1,75 @@
+## NTU李毅宏Machine Learning课程笔记
+
+by Yixiang Ren
+
+### 前言
+
+此前就看到有关李宏毅老师的这门热门ML课程的推送，他在课程中会使用宝可梦等形象进行有趣的解释。正好最近本人在着手开始DL方面的开发，可以借此机会简单复习一下ML的基础知识。
+
+
+
+### Lecture#1 Intro to ML&DL
+
+机器学习任务的分类：回归Regression & 分类Classification，*Structured Learning结构化学习(自主学习生成有结构的物件)*
+
+Regression问题的求解过程：
+
+1. 设计一个模型，以最简单的线性回归为例。最初的模型设计最考验domain knowledge，即对于问题的理解
+   $$
+   y=wx_1+b，w和b为未知量
+   $$
+
+2. 定义一个损失函数L(b, w)（平均绝对值误差MAE、均方误差MSE、Cross-Entropy等）
+   $$
+   MSE:L=\frac1N\Sigma e_n=\frac1N\Sigma (y-\hat{y})^2
+   $$
+
+3. 最优化，常用梯度下降更新参数：
+   $$
+   w^*,b^*=arg\min L, \eta\rm\ is\ learning\ rate
+   $$
+
+   $$
+   w_{i+1}\leftarrow w_i-\eta\frac{\partial L}{\partial w}|_{w=w_i,b=b_i}
+   $$
+
+   $$
+   b_{i+1}\leftarrow b_i-\eta\frac{\partial L}{\partial b}|_{w=w_i,b=b_i}
+   $$
+
+   梯度下降可能会产生局部最优解
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
