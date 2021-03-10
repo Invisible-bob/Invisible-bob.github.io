@@ -36,6 +36,8 @@ footer-links:
   playconsole:
 
 markdown: kramdown
+kramdown:
+    math_engine: katex
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
